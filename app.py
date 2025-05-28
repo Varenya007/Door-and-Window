@@ -8,7 +8,7 @@ from PIL import Image
 import io
 
 app = FastAPI()
-model = YOLO("C:/Users/varen/OneDrive/Desktop/Yolov8/runs/detect/train2/weights/best.pt")  # Path to your trained model
+model = YOLO("best.pt") 
 
 @app.post("/detect")
 async def detect(file: UploadFile = File(...)):
