@@ -1,0 +1,13 @@
+train: C:/Users/varen/OneDrive/Desktop/Yolov8/train/images
+val: C:/Users/varen/OneDrive/Desktop/Yolov8/valid/images
+test: C:/Users/varen/OneDrive/Desktop/Yolov8/test/images
+
+nc: 2
+names: ['door', 'window']
+
+roboflow:
+  workspace: varenya-ocsdn
+  project: projectttt
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/varenya-ocsdn/projectttt/dataset/3
