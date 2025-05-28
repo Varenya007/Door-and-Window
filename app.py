@@ -14,7 +14,7 @@ model = YOLO("best.pt")
 async def detect(file: UploadFile = File(...)):
     contents = await file.read()
     image = Image.open(io.BytesIO(contents)).convert("RGB")
-    results = model.predict(np.array(image), conf=0.25)[0]
+    results = model.predict(np.array(image), conf=0.1)[0]
 
     detections = []
     for box in results.boxes:
